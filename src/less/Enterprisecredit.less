@@ -1,0 +1,207 @@
+/*企业征信首页*/
+nav {
+    width: 100%;
+    height: 60px;
+    background: #283c5e;
+    ul {
+        width: 100%;
+        height: 100%;
+        li {
+            padding: 0 30px;
+            float: left;
+            text-align: center;
+            line-height: 60px;
+            a {
+                font-size: 18px;
+                color: #E4E4E4;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.content {
+    width: 100%;
+    .tab-bar {
+//      width: 353px;
+        width: 567px;
+        margin: 44px auto;
+        div{
+            float: left;
+            cursor: pointer;
+            i{
+                display: block;
+                float: left;
+                width: 27px;
+                height: 27px;
+                background-size: cover;
+                background: url(../images/unsuccess.png) no-repeat;
+            }
+            i.active{
+                width: 27px;
+                height: 27px;
+                background-size: cover;
+                background: url(../images/success.png) no-repeat;
+            }
+            span{
+                float: left;
+                font-size: 18px;
+                color: #212121;
+                margin-left: 22px;
+            }
+        }
+        div.ml{
+            margin-left: 93px;
+        }
+    }
+    .tab-list {
+        width: 100%;
+        display: none;
+        .querydata {
+            width: 822px;
+            margin: 3px auto;
+            input {
+                border: 0;
+                outline: none;
+                border: 1px solid #005bac;
+                width: 708px;
+                padding-left: 17px;
+                height: 51px;
+            }
+            ::-webkit-input-placeholder {
+                /* WebKit browsers */
+                font-size: 18px;
+            }
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                font-size: 18px;
+            }
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                font-size: 18px;
+            }
+            :-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                font-size: 18px;
+            }
+            div {
+                width: 91px;
+                height: 53px;
+                border: 1px solid #005bac;
+                background: #005bac;
+                cursor: pointer;
+                img {
+                    width: 31px;
+                    height: 31px;
+                    margin-top: 10px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .choose {
+            width: 822px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            .choose-left{
+                width: 729px;
+                label {
+                    font-size: 16px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 10px 34px 10px 0;
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                    input[type="checkbox"]:checked + i {
+                        background: #283c5e;
+                    }
+                    i {
+                        font-size: 18px;
+                        font-style: normal;
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        text-align: center;
+                        line-height: 18px;
+                        color: #fff;
+                        vertical-align: middle;
+                        margin: -2px 8px 1px 0;
+                        border: 1px solid #283c5e;
+                    }
+                }
+            }
+            .choose-right{
+                width: 93px;
+                span{
+                    font-size: 16px;
+                    color: #434242;
+                    cursor: pointer;
+                    padding: 10px 0;
+                    display: none;
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 10px;
+                    }
+                }
+                span:first-child i{
+                    background: url(../images/arrow-down.png) no-repeat;
+                }
+                span:last-child i{
+                    background: url(../images/arrow-up.png) no-repeat;
+                }
+                span.active{
+                    display: block;
+                }
+            }
+        }
+        table{
+            width: 100%;
+            height: 162px;
+            margin-top: 10px;
+            tr{
+                th{
+                    width: 238px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    float: left;
+                    background: #92b9db;
+                    color: #212121;
+                    font-size: 18px;
+                    margin-left: 1px;
+                    box-shadow: 0px 0px 2px #a8adb2;
+                }
+                td{
+                    width: 238px;
+                    height: 54px;
+                    line-height: 54px;
+                    text-align: center;
+                    float: left;
+                    background: #92b9db;
+                    color: #f5f5f5;
+                    font-size: 16px;
+                    margin-left: 1px;
+                    box-shadow: 0px 0px 2px #a8adb2;
+                    a{
+                        color: #f5f5f5;
+                        font-size: 16px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        table tr:nth-child(even) td{
+            background: #a2c3e0;
+        }
+    }
+    .tab-list.active{
+        display: block;
+    }
+}

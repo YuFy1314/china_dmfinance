@@ -1,0 +1,243 @@
+<!--
+	作者：苏日俪格
+	时间：2018-03-21
+	描述：首页
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Index.css"/>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：公共头部head
+        -->
+		<embed type="text/html" src="head.html" width="100%" height="104"></embed>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：轮播图
+        -->
+		<div id="banner" class="banner">
+			<ul>
+				<li class="active">
+					<a href="javascript:;">
+						<div class="opacity">
+							<div class="text">
+								<p>提高外贸相关业务的办事效率</p><span>IMPROVE THE SERVICE EFFICIENCY IN FOREIGN <br />THADE-RELATED BUSSIN</span>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="opacity">
+							<div class="text">
+								<p>增强外贸相关业务的知名度</p><span>IMPROVE THE SERVICE EFFICIENCY IN FOREIGN <br />THADE-RELATED BUSSIN</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ol>
+				<li class="active"></li>
+				<li></li>
+			</ol>
+		</div>
+		
+        <div class="container">
+        	<!--
+	        	作者：苏日俪格
+	        	时间：2018-03-19
+	        	描述：信息资讯
+	        -->
+        	<div class="infoplatform">
+        		<div class="title">
+        			<h2><a href="infoPlatform.html">信息资讯</a></h2>
+        			<em></em>
+        			<p>INFORMATION CONSULTATION</p>
+        		</div>
+        		<div class="infoplatform-content clearfix">
+	        		<div class="infoplatform-content-pic fl">
+	        			<a href="javascript:;">
+	        				<img src="images/pexels-photo-936722.png" alt="信息资讯" title="信息资讯"/>
+	        			</a>
+	        		</div>
+	        		<div class="newsplatform fr">
+	        			<span><a href="infoPlatform.html" target="_blank">新闻资讯</a></span>
+	        			<ul class="clearfix"></ul>
+	        		</div>
+	        		<script type="text/javascript">
+	        			$(document).ready(function(){
+	        				function getData(oEle){
+	        					$.ajax({
+			        				url:"http://101.201.154.205:9092/ZD_2/cNewsList",
+			        				data: {
+			        					t: Math.random()
+			        				},
+			        				dataType: 'json',
+			        				jsonp: 'callback'
+			        			}).then(function(res){
+			        				for(var i=0; i<res.length; i++){
+			        					var arr = res[i].date.split('-');
+			        					var oLi = $(`<li><span class="fl"><div class="day">${arr[2]}</div>
+			        					<div class="year">${arr[0]}-${arr[1]}</div></span>
+			        					<div class="news-list elisis fr">
+			        					<h3 class="elis"><a href="${res[i].information}">${res[i].name}</a></h3>
+			        					<p>${res[i].intro}</p></div></li>`);
+			        					oLi.appendTo(oEle);
+			        				}
+			        			},function(){
+			        				console.log('error');
+			        			});
+	        				}
+	        				getData($('.newsplatform ul'));
+	        				getData($('.transaction-content-right ul'));
+	        			});
+	        		</script>
+	        	</div>
+        	</div>
+        	
+        	<!--
+            	作者：苏日俪格
+            	时间：2018-03-19
+            	描述：法律法规
+            -->
+            <div class="lawregulation">
+            	<h1>法制信息网</h1>
+            	<h2>法律法规数据库</h2>
+            	<ul class="clearfix">
+            		<li>中国<div class="triangle"></div></li>
+            		<li>新加坡<div class="triangle"></div></li>
+            		<li>马来西亚<div class="triangle"></div></li>
+            		<li>泰国<div class="triangle"></div></li>
+            		<li>菲律宾<div class="triangle"></div></li>
+            		<li>印度尼西亚<div class="triangle"></div></li>
+            		<li>越南<div class="triangle"></div></li>
+            		<li>文莱<div class="triangle"></div></li>
+            		<li>柬埔寨<div class="triangle"></div></li>
+            		<li>老挝<div class="triangle"></div></li>
+            		<li>缅甸<div class="triangle"></div></li>
+            	</ul>
+            	<div class="querydata">
+            		<input class="fl" type="text" value="" placeholder="在63050部法规中搜索" />
+            		<div id="search" class="fl">
+            			<img src="images/20180319173315.png" alt="search" title="点击搜索"/>
+            		</div>
+            	</div>
+            </div>
+            <!--<script type="text/javascript">
+            	$('.lawregulation ul').on('click','li',function(){
+            		$.ajax({
+        				url:"http://192.168.1.100:8080/ZD_2/LawsCountry",
+        				data: {
+        					t: Math.random()
+        				},
+        				dataType: 'json',
+        				jsonp: 'callback'
+        			}).then(function(res){
+        				for(var i=0; i<res.length; i++){
+        					var selectId = res[i].id;
+        				}
+        				$.ajax({
+        					url:"http://192.168.1.100:8080/ZD_2/lawsInforByCid",
+	        				data: {
+	        					t: Math.random()
+	        				},
+	        				dataType: 'json',
+	        				jsonp: 'callback'
+        				}).then(function(res){
+        					for(var i=0; i<res.length; i++){
+	        					console.log(res[i])
+	        				}
+        					$('.lawregulation ul li').each(function(index,oEle){
+        						$(this).
+        					});
+        				},function(){
+        					console.log('error');
+        				});
+        			},function(){
+        				console.log('error');
+        			});
+            	});
+    		</script>-->
+            
+            <!--
+	        	作者：苏日俪格
+	        	时间：2018-03-19
+	        	描述：外汇交易
+	        -->
+        	<div class="transaction">
+        		<div class="title">
+        			<h2><a href="Exchange.html">外汇交易</a></h2>
+        			<em></em>
+        			<p>FOREIGN EXCHANGE TRANSACTION</p>
+        		</div>
+        		<div class="transaction-content clearfix">
+	        		<div class="transaction-content-left fl">
+	        			<a href="javascript:;">
+	        				<img src="images/20180318095509.png" alt="外汇交易" title="外汇交易"/>
+	        			</a>
+	        		</div>
+	        		<div class="transaction-content-center fl">
+	        			<a href="javascript:;">
+	        				<img src="images/pexels-photo-534216.png" alt="外汇交易" title="外汇交易"/>
+	        			</a>
+	        		</div>
+	        		<div class="transaction-content-right fl">
+	        			<span><a href="Exchange.html" target="_blank">新闻资讯</a></span>
+	        			<ul class="clearfix"></ul>
+	        		</div>
+	        	</div>
+        	</div>
+        	
+        	<!--
+	        	作者：苏日俪格
+	        	时间：2018-03-19
+	        	描述：企业征信
+	        -->
+        	<div class="enterprisecredit">
+        		<div class="title">
+        			<h2><a href="Enterprisecredit.html">企业征信</a></h2>
+        			<em></em>
+        			<p>ENTERPRISE CREDIT</p>
+        		</div>
+        		<div class="enterprisecredit-content clearfix">
+	        		<a href="Enterprisecredit.html">
+						<div class="text">
+							<p>诚信经营   共谋共赢</p>
+							<span>DO BUSINESS WITH INTEGRITY <br />GET WIN-WIN IN COOPREATION</span>
+						</div>
+					</a>
+	        	</div>
+        	</div>
+        </div>
+        
+        <!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：回到顶部
+        -->
+		<div class="returntop"></div>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：公共底部foot
+        -->
+		<embed type="text/html" src="foot.html" width="100%" height="150" style="margin-top: 220px;overflow: hidden;"></embed>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：公共行为JS  common.js
+        -->
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,344 @@
+.searchBar1 {
+    user-select: none;
+    margin-bottom: 15px;
+    .newBar {
+        width: 650px;
+        height: 50px;
+        float: left;
+        ul {
+            li {
+                width: 120px;
+                height: 100%;
+                margin-right: 10px;
+                line-height: 50px;
+                font-family: "微软雅黑";
+                font-size: 16px;
+                text-align: center;
+                color: #797979;
+                float: left;
+                position: relative;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color: #797979;
+                }
+                ol {
+                    position: absolute;
+                    width: 120px;
+                    display: none;
+                    z-index: 999;
+                    background: rgba(255,255,255,0.6);
+                    color: #fff;
+                    box-shadow: -5px 10px 20px rgba(0,0,0,0.4);
+                    li {
+                        position: relative;
+                        border-bottom: 1px dashed #CCCCCC;
+                        a {
+                            color: #fff;
+                            background: rgba(255,255,255,0.6);
+                        }
+                        .aann {
+                            display: none;
+                            position: absolute;
+                            background: rgba(255,255,255,0.6);
+                            left: 120px;
+                            top: 0;
+                            border-left: 1px solid #DCDCDC;
+                            box-shadow: 3px -3px 3px rgba(0,0,0,0.2);
+                            div {
+
+                                width: 120px;
+                                height: 100%;
+                                background: rgba(255,255,255,0.6);
+                                border-bottom: 1px dashed #CCCCCC;
+                                a {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    li:hover {
+                        .aann {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .active2:hover {
+                background: #005bac;
+                ol {
+                    display: block;
+                    li {
+                        a {
+                            color: #797979;
+                        }
+                        a:hover {
+                            color: #005bac;
+                            text-decoration: underline;
+                            font-weight: bold;
+                        }
+                    }
+                }
+                a {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                }
+            }
+            .active {
+                background: #005bac;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.searchBar{
+  user-select:none;
+  margin-bottom: 15px;
+  .newBar{
+    width: 824px;
+
+    float: left;
+    ul {
+        background: #eeeeee;
+      li{
+       padding: 13px  32px;
+
+        border: 2px solid #eee;
+
+        font-family: "微软雅黑";
+        font-size: 16px;
+        text-align: center;
+        color: #797979;
+        float: left;
+        position: relative;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: #797979;
+        }
+      }
+      .active2:hover{
+        background: #fff;
+        border-bottom: 2px  solid #fff;
+        a{
+          width: 100%;
+          height: 100%;
+          color: #005bac;
+          font-weight: bold;
+          font-family: "微软雅黑";
+        }
+      }
+      .active{
+        border-bottom: 2px  solid #fff;
+        background: #fff;
+        a{
+          width: 100%;
+          height: 100%;
+          color: #005bac;
+          font-weight: bold;
+          font-family: "微软雅黑";
+        }
+      }
+    }
+  }
+  .search{
+    float: right;
+//  width: 371px;
+    height: 46px;
+    border:2px solid #a0a0a0;
+    i{
+      float: left;
+      display: block;
+      width: 35px;
+      height: 46px;
+      background: url(../images/searchhui.png) center no-repeat;
+
+    }
+    input {
+      outline: none;
+      border:0;
+      width: 262px;
+      height: 44px;
+      float: left;
+    }
+    ::-webkit-input-placeholder { /* WebKit browsers */ 
+            font-size:14px;
+            color: #ccc;
+        } 
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+            font-size:14px;
+            color: #ccc;
+        } 
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+            font-size:14px;
+            color: #ccc;
+        } 
+        :-ms-input-placeholder { /* Internet Explorer 10+ */ 
+            font-size:14px;
+            color: #ccc;
+        }
+    em{
+      display: block;
+      float: left;
+      width: 72px;
+      height: 46px;
+      text-align: center;
+      line-height: 46px;
+      background: #a0a0a0;
+      color: #fff;
+      font-style: normal;
+      font-family: "微软雅黑";
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+}
+.assetsBar{
+  margin-bottom: 30px;
+  height: 55px;
+  border-bottom: 1px solid #eeeeee;
+  .assetsBarUl{
+      li{
+        width: 120px;
+        height: 44px;
+        float: left;
+        margin-left: 15px;
+
+        a{
+          font-size: 14px;
+          font-family: "微软雅黑";
+          color: #5b5b5b;
+          text-align: center;
+          border-radius: 5px;
+          display: block;
+          width: 100%;
+          height: 44px;
+          line-height: 20px;
+        }
+        a.active{
+          background: #005bac;
+          color: #fff;
+        }
+        a:hover{
+          background: #005bac;
+          color: #fff;
+        }
+      }
+
+  }
+  .pois{
+      margin-top: 10px;
+    i {
+       font-style: normal;
+       font-size: 12px;
+      font-family: "微软雅黑";
+      color: #999;
+      b{
+        color: #005bac;
+      }
+
+    }
+  }
+}
+.exchange{
+  
+    .exchangeSurface{
+      width: 720px;
+     .exSur{
+       margin-bottom: 44px;
+       .tName{
+         display: block;
+         width: 720px;
+         height: 35px;
+         background: #eeeeee;
+         line-height: 35px;
+         font-size: 16px;
+         color: #313131;
+         font-family: "微软雅黑";
+       }
+       table {
+         tr {
+           th{
+             width: 180px;
+             height: 35px;
+           }
+           td{
+             font-size: 14px;
+             font-family: "微软雅黑";
+             width: 120px;
+             height: 35px;
+             color: #5b5b5b;
+           }
+           .one{
+             font-weight: bold;
+           }
+         }
+       }
+       table tr:nth-child(odd) td{
+         background: #eee;
+       }
+     }
+     
+    }
+    .exchangeChart{
+        width: 450px;
+        height: 160px;
+        border: 1px solid #ececec;
+        
+        .exBox{
+            width: 100%;
+            height: 34px;
+            background: #eeeeee;
+            
+            h1{
+                font-size: 15px;
+                font-family: "微软雅黑";
+                font-weight: bold;
+                text-align:initial;
+                line-height: 34px;
+                margin-left: 20px;
+                color: #313131;
+            }
+            
+        }
+        .exBox2{
+            width: 410px;
+            margin:20px auto;
+            h1{
+                font-size: 15px;
+                font-family: "微软雅黑";
+                line-height: 23px;
+                color: #afafaf;
+                width: 100%;
+                height: 100%;
+                text-align: initial;
+            }
+           
+        }
+    }
+  }
+  .eChart{
+      margin-bottom: 45px;
+      height: 367px;
+      
+      color: #FFFFFF;
+  }
+    .b{
+        width: 720px;
+        margin-bottom: 20px;
+        
+        .dat{
+            font-size: 15px;
+            
+            outline: none;
+        }
+    }

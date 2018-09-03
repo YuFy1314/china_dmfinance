@@ -1,0 +1,369 @@
+<!--
+	作者：老于
+	时间：2018-03-22
+	描述：信息资讯平台——指数
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>信息资讯平台——指数</title>
+		<link rel="stylesheet" href="css/common.css" />
+    	<link rel="stylesheet" href="css/consultation.css">
+	</head>
+	<body>
+		<!--
+		        作者：老于
+		        时间：2018-03-22
+		        描述：公共头部head
+	   -->
+	   <embed type="text/html" src="head.html" width="100%" height="104"/>
+	   <!--
+		        作者：老于
+		        时间：2018-03-22
+		        描述：新闻导航
+	   -->
+	   <div class="container searchBar1 clearfix">
+			<div class="newBar">
+				<ul class="clearfix">
+					<li class="active2">
+						<a href="infoPlatform.html">新闻动态</a>
+					</li>
+					<li class="active2">
+						<a href="policies.html">政策法规</a>
+					</li>
+					<li class="active active2" >
+		       	 		<a href="AssetsExchange.html">经济金融数据</a>
+		       	 		<ol>
+		       	 			<li><a href="AssetsExchange.html" >资产类别</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="AssetsExchange.html">外汇</a></div>
+		       	 					<div><a href="AssetsShares.html">股票</a></div>
+		       	 					<div><a href="AssetsBond.html">大宗商品</a></div>
+		       	 					<div><a href="AssetsBond.html">债券</a></div>
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="CountryData.html">宏观数据</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="CountryData.html">GDP</a></div>
+		       	 					<div><a href="CountryData.html">CPI</a></div>
+		       	 					<div><a href="CountryData.html">就业季度指数</a></div>
+		       	 					<div><a href="CountryData.html">贸易与投资</a></div>
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="Trade.html">投资与贸易</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="Trade.html">贸易</a></div>
+		       	 					<div><a href="Trade.html">投资</a></div>
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="consultation.html">指数</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="consultation.html">人民币国际指数</a></div>
+		       	 					<div><a href="consultation.html">一带一路指数</a></div>
+		       	 					
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="risk.html">风险</a></li>
+		       	 			<li><a href="Research.html">研究报告</a></li>
+		       	 		</ol>
+		       	 		
+		       	 	</li>
+					<li class="active2">
+						<a href="Project.html">项目</a>
+					</li>
+					<li class="active2">
+						<a href="activity.html">活动</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	   <div class="container searchBar clearfix" >
+	        <div class="newBar">
+	            <ul class="clearfix">
+	                <li class=" active2" ><a href="AssetsExchange.html">资产类别</a></li>
+					<li class="active2"><a href="CountryData.html">宏观数据</a></li>
+					<li class="active2" > <a href="Trade.html">投资与贸易</a> </li>
+					<li class="active2 active" ><a href="consultation.html">指数</a></li>
+					<li class="active2 "><a href="risk.html">风险</a></li>
+					<li class="active2"><a href="Research.html">研究报告</a></li>
+	            </ul>
+	        </div>
+	        <div class="search clearfix">
+	            <i></i>
+	            <input type="text" name="" id="" value=""  placeholder="请输入关键字"/>
+	            <em>搜索</em>
+	        </div>
+        </div>
+        <!--
+		        作者：老于
+		        时间：2018-03-22
+		        描述：国别数据
+	   -->
+	   <div class="assetsBar container clearfix" >
+		    <ul class="assetsBarUl clearfix fl">
+		        <li><a href="javascript:;" class="active">人民币<br />国际化指数</a></li>
+		        <li><a href="javascript:;">中证<br />一带一路指数</a></li>
+		        <li><a href="javascript:;">一带一路指数<br />基础设施发展指数</a></li>
+		        <li><a href="javascript:;">中国-东盟<br />五通指数</a></li>
+		    </ul>
+		    <div class="pois fr">
+		        <i><b> 人民币国际化指数</b>>指数>.....>中国-东盟综合金融服务网 >您所在的位置</i>
+		    </div>
+		</div>
+		
+		
+		<!--
+		           作者：老于
+		           时间：2018-03-22
+		           描述：表格页面
+	      -->
+	    <div class="exchange container clearfix">
+	    	<div class="b">
+				<input type="date" class="dat"/>
+			</div>
+         <div class="exchangeSurface fl " >
+             <div class="exSur">
+                 <table border="0" cellspacing="0" cellpadding="0" class="tab1"></table>
+             </div>
+         </div>
+         <div class="exchangeChart fr" >
+         	<div class="exBox">
+         		<h1>指数介绍</h1>
+         	</div>
+         	<div class="exBox2">
+         		<h1>
+         			人民币国际化指数（RMB Internationalization Index，RII）以理论上货币的价值尺度、支付手段和价值贮藏功能为依据，综合考虑人民币在贸易计价、国际金融计价与官方外汇储备的全球占比而计算得出。
+         		</h1>
+         	</div>
+         </div>
+     </div>
+     <!--
+		        作者：老于
+		        时间：2018-03-22
+		        描述：eCharts图
+	   -->
+     <div class="eChart container" id="chart"></div>
+     <!--
+        	作者：老于
+        	时间：2018-03-19
+        	描述：返回顶部
+        -->
+        <div class="returntop"></div>
+     <!--
+		        作者：老于
+		        时间：2018-03-22
+		        描述：公共底部
+	   -->
+	   <embed type="text/html" src="foot.html" width="100%" height="150"  />
+	   
+	   <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+       <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+       <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+       <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script type="text/javascript">
+			$('.assetsBarUl').on('click','li',function(){
+				$(".dat").val('');
+				$(this).children('a').addClass('active').siblings().parent().children('a').removeClass('active');
+				$(this).children().addClass('active').parent().siblings().children($('i')).removeClass('active');
+//				aDiv.eq($(this).index()).addClass('active').siblings().removeClass('active');
+			});
+        </script>
+        
+       <script type="text/javascript">
+       	$(".dat").change(function(){
+	    $(".dat").attr("value",$(this).val()); //赋值
+	       date(a,$(this).val())
+	});
+      function date(a,b){
+ 
+      	$.ajax({
+      		url:"http://101.201.154.205:9092/ZD_2/zdiListBymohu",
+      		data:{
+      			did:a,
+      			date:b,
+      			t:Math.random()
+      		},
+      		dataType:'json',
+      		"jsonp":"callback"
+      	}).then(function(res){
+     		console.log(res)
+     		$('.tab1').empty();
+     		var oTr = $(`<tr style="background: #eeeeee;">
+                         <th>日期</th>
+                         <th>指数值</th>
+                         <th>较上一日涨跌</th>
+                         <th>较基数期涨跌</th>
+                     </tr>`);
+	       			oTr.appendTo($('.tab1'));
+      		for(var i=0;i<res.length;i++){
+	       				var oTd = $(`<tr>
+	                         <td class="one">${res[i].date}</td>
+	                         <td>${res[i].znumber}</td>
+	                         <td>${res[i].yfd}</td>
+	                         <td>${res[i].zfd}</td></tr>`)
+	       				oTd.appendTo($('.tab1'));
+	       			}
+     
+      	},function(err){
+      		console.log(err)
+      	})
+      }
+      var a = 1;
+       function zdiListByDid(){
+       	
+	       		$.ajax({
+	       			url:"http://101.201.154.205:9092/ZD_2/zdiListByDid",
+	       			data:{
+	       				did:a,
+	       				t:Math.random()
+	       			},
+	       			dataType:"json",
+	       			"jsonp":"callback"
+	       		}).then(function(res){
+	       			$('.tab1').empty();
+	       			var oTr = $(`<tr style="background: #eeeeee;">
+                         <th>日期</th>
+                         <th>指数值</th>
+                         <th>较上一日涨跌</th>
+                         <th>较基数期涨跌</th>
+                     </tr>`);
+	       			oTr.appendTo($('.tab1'));
+	       			for(var i=0;i<9;i++){
+	       				var oTd = $(`<tr>
+	                         <td class="one">${res[i].date}</td>
+	                         <td>${res[i].znumber}</td>
+	                         <td>${res[i].yfd}</td>
+	                         <td>${res[i].zfd}</td></tr>`)
+	       				oTd.appendTo($('.tab1'));
+	       			}
+	       		},function(err){
+	       			console.log(err)
+	       		})
+	       }
+       	zdiListByDid();
+       $('.assetsBar li').bind('click',function(){
+      
+       		a = $(this).index()+1;
+       		zdiListByDid();
+       })
+       
+       
+       
+       
+       
+       	var dom = document.getElementById("chart");
+		var myChart = echarts.init(dom);
+		var app = {};
+		option = null;
+		var data = [
+		    [1, 4862.4],
+		    [2, 5294.7],
+		    [3, 5934.5],
+		    [4, 7171.0],
+		    [5, 8964.4],
+		    [6, 10202.2],
+		    [7, 11962.5],
+		    [8, 14928.3],
+		    [9, 16909.2],
+		    [10, 18547.9],
+		    [11, 21617.8],
+		    [12, 26638.1],
+		    [13, 34634.4],
+		    [14, 46759.4],
+		    [15, 58478.1],
+		    [16, 67884.6],
+		    [17, 74462.6],
+		    [20, 79395.7]
+		];
+		
+		// See https://github.com/ecomfe/echarts-stat
+		var myRegression = ecStat.regression('exponential', data);
+		
+		myRegression.points.sort(function(a, b) {
+		    return a[0] - b[0];
+		});
+		
+		option = {
+		   
+		    tooltip: {
+		        trigger: 'axis',
+		        axisPointer: {
+		            type: 'cross'
+		        }
+		    },
+		    xAxis: {
+		        type: 'value',
+		        splitLine: {
+		            lineStyle: {
+		                type: 'dashed'
+		            }
+		        },
+		        splitNumber: 20
+		    },
+		    yAxis: {
+		        type: 'value',
+		        splitLine: {
+		            lineStyle: {
+		                type: 'dashed'
+		            }
+		        }
+		    },
+		    series: [{
+		        name: 'scatter',
+		        type: 'scatter',
+		        label: {
+		            emphasis: {
+		                show: true,
+		                position: 'left',
+		                textStyle: {
+		                    color: 'red',
+		                    fontSize: 16
+		                }
+		            }
+		        },
+		        data: data
+		    }, {
+		        name: 'line',
+		        type: 'line',
+		        showSymbol: false,
+		        smooth: true,
+		        data: myRegression.points,
+		        markPoint: {
+		            itemStyle: {
+		                normal: {
+		                    color: 'transparent'
+		                }
+		            },
+		            label: {
+		                normal: {
+		                    show: true,
+		                    position: 'left',
+		                    formatter: myRegression.expression
+		                   
+		                }
+		            },
+		            data: [{
+		                coord: myRegression.points[myRegression.points.length - 1]
+		            }]
+		        }
+		    }]
+		};
+		;
+		if (option && typeof option === "object") {
+		    myChart.setOption(option, true);
+		}
+       </script>
+	</body>
+</html>

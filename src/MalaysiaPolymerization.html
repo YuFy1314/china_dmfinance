@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>国家聚合</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/NationalPolymerization.css"/>
+</head>
+<body>
+<!--
+        	作者：你的男孩HD
+        	时间：2018-04-02
+        	描述：公共头部head
+        -->
+<embed type="text/html" src="head.html" width="100%" height="104" />
+<!--
+        	作者：你的男孩HD
+        	时间：2018-04-02
+        	描述：导航国家
+        -->
+<div class="container">
+    <nav>
+        <ul class="clearfix">
+            <li ><a href="NationalPolymerization.html">新加坡</a></li>
+            <li class="active"><a href="MalaysiaPolymerization.html">马来西亚</a></li>
+            <li><a href="ThailandPolymerization.html">泰国</a></li>
+            <li><a href="javascript:;">菲律宾</a></li>
+            <li><a href="javascript:;">印度尼西亚</a></li>
+            <li><a href="javascript:;">越南</a></li>
+            <li><a href="javascript:;">文莱</a></li>
+            <li><a href="javascript:;">柬埔寨</a></li>
+            <li><a href="javascript:;">老挝</a></li>
+            <li><a href="javascript:;">缅甸</a></li>
+        </ul>
+    </nav>
+    <!--
+        	作者：你的男孩HD
+        	时间：2018-04-02
+        	描述：中间详情
+        -->
+    <div class="nationalname">
+        <strong>马来西亚</strong>
+        <i></i>
+        <b style="color: #45546e">MALAYSIA</b>
+        <table border="0" cellspacing="0" cellpadding="0" class="CN">
+
+        </table>
+        <div class="cacc clearfix">
+            
+        </div>
+        <div class="nav">
+            <ol>
+                <li class="active">政策</li>
+                <li>市场</li>
+                <li >公司</li>
+                <li>贸易</li>
+                <li>投资</li>
+                <li>一带一路</li>
+                <li>旅游</li>
+            </ol>
+             <div class="details">
+             	<div class="clearfix policy active">
+                     
+                 </div>
+                 <div class="clearfix market">
+                     
+                 </div>
+                 <div class="clearfix company">
+                     
+                 </div>
+                 <div class="clearfix trade">
+                     
+                 </div>
+                 <div class="clearfix investment">
+                     
+                 </div>
+                 <div class="clearfix thebelt">
+                     
+                 </div>
+                 <div class="clearfix tourism">
+                     
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+<!--
+           作者：你的男孩HD
+           时间：2018-03-22
+           描述：公共底部
+
+      -->
+<embed type="text/html" src="foot.html" width="100%" height="150"  />
+<!--
+        	作者：你的男孩HD
+        	时间：2018-03-19
+        	描述：回到顶部
+        -->
+<div class="returntop"></div>
+
+<script src="js/common.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    tabBar($('.nav ol li'),$('.details div'));
+    /*汇率信息*/
+    $.ajax({
+        url: 'http://101.201.154.205:9092/ZD_2/wcList',
+        data: {
+            t: Math.random()
+        },
+        dataType: 'json',
+        jsonp: 'callback'
+    }).then(function(res){
+
+         var arr = [];
+         for(var i = 50;i<100;i++){
+             arr.push(res[i])
+         }
+        var j = 0;
+
+        function cread() {
+            j++;
+            if(j==50){
+                j=0
+            }else {
+                var oDiv = $(`<tr >
+                <th>MYR-CNY    汇率：</th>
+                <th>现价：${arr[j].zprice}</th>
+                <th>涨跌：${arr[j].fd}</th>
+                <th>买价：${arr[j].mixprice}</th>
+                <th>卖价：${arr[j].maxprice}</th>
+            </tr>`);
+                oDiv.appendTo($('table'));
+
+                if(arr[j].fd.indexOf('-')==-1){
+                    $('table tr th').css({
+                        color:'red'
+                    })
+                }else{
+                    $('table tr th').css({
+                        color:'green'
+                    })
+                }
+                if($('table tr').length>1){
+                    $('table tr:nth-child(1)').remove();
+                }
+            }
+        }
+        cread();
+        setInterval(cread,1000);
+
+    },function(){
+        console.log('error');
+    });
+    
+    /*国家信息交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/nationList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div class="cacc-left fl">
+                <ul>
+                    <li>中文名称: <a href="javascript:;">${res[1].chinese}</a></li>
+                    <li>英文名称: <a href="javascript:;">${res[1].english}</a></li>
+                    <li>人口密度: <a href="javascript:;">${res[1].density}</a></li>
+                    <li>主要民族: <a href="javascript:;">${res[1].natio}</a></li>
+                    <li>主要宗教: <a href="javascript:;">${res[1].religion}</a></li>
+                    <li>官方语言: <a href="javascript:;">${res[1].language}</a></li>
+                    <li>国家代码: <a href="javascript:;">${res[1].dname}</a></li>
+                </ul>
+            </div>
+            <div class="cacc-center fl">
+                <ul>
+                    <li>政治体制: <a href="javascript:;">${res[1].political}</a></li>
+                    <li>国土面积: <a href="javascript:;">${res[1].area}</a></li>
+                    <li>人口数量: <a href="javascript:;">${res[1].pnumber}</a></li>
+                    <li>国际电话区号: <a href="javascript:;">${res[1].telep}</a></li>
+                    <li>国际顶级域名:  <a href="javascript:;">${res[1].domain}</a></li>
+                    <li>道 路 通 行:  <a href="javascript:;">${res[1].loadat}</a></li>
+                    <li>人类发展指数:  <a href="javascript:;">${res[1].indexnum}</a></li>
+                </ul>
+            </div>
+            <div class="cacc-right fr">
+                <ul>
+                    <li>首     都: <a href="javascript:;">${res[1].capital}</a></li>
+                    <li>货     币: <a href="javascript:;">${res[1].currency}</a></li>
+                    <li>地     图: <a href="javascript:;">${res[1].map}</a></li>
+                    <li>所 属 州: <a href="javascript:;">${res[1].region}</a></li>
+                    <li>国 庆 日 :  <a href="javascript:;">${res[1].birthday}</a></li>
+                    <li>时区: <a href="javascript:;">${res[1].datepa}</a></li>
+                    <li>GDP: <a href="javascript:;">${res[1].gdp}</a></li>
+                    <li>人均GDP: <a href="javascript:;">${res[1].pgdp}</a></li>
+                </ul>
+            </div>`);
+        oDiv.appendTo($('.cacc'));
+    },function(){
+    	console.log('error');
+    });
+    
+    /*政策数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/policyIList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+
+    	for(var i=2; i<4; i++){
+
+    		var oDiv = $(`<div><strong>${res[i].type}<p>${res[i].english}</p></strong>
+                     <dl class="details-left fl">
+                         <dt>常见信息</dt>
+                         <dd class="elis"><a href="${res[i].zappendx1}" target="_blank">${res[i].zname1}</a></dd>
+                         <dd class="elis"><a href="${res[i].zappendx2}" target="_blank">${res[i].zname2}</a></dd>
+                     </dl>
+                     <dl class="details-right fl">
+                         <dt>新闻资讯</dt>
+                         <dd class="elis"><a href="${res[i].nappendx1}" target="_blank">${res[i].news1}</a></dd>
+                         <dd class="elis"><a href="${res[i].nappendx2}" target="_blank">${res[i].news2}</a></dd>
+                         <dd class="elis"><a href="${res[i].nappendx3}" target="_blank">${res[i].news3}</a></dd>
+                     </dl>
+                     <a href="policies.html" class="act" target="_blank">更多>></a>
+                     </div>`);
+            oDiv.appendTo($('.policy'));
+    	}
+    },function(){
+    	console.log('error');
+    });
+    
+    /*市场数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/marketList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div><strong style="margin: 0 auto; width:134px;margin-left: -67px">${res[1].name} <p style="margin-left: 6px;">FINANCIAL MARKET</p></strong>
+                 <dl class="details-left fl">
+                     <dt>常见信息</dt>
+                     <dd class="elis"><a href="${res[1].appendx1}" target="_blank">${res[1].news1}</a></dd>
+                     <dd class="elis"><a href="${res[1].appendx2}" target="_blank">${res[1].news2}</a></dd>
+                 </dl>
+                 <dl class="details-right fr">
+                     <dt>新闻资讯</dt>
+                     <dd class="elis"><a href="" target="_blank"></a></dd>
+                     <dd class="elis"><a href="" target="_blank"></a></dd>
+                 </dl>
+                <a href="AssetsCommodity.html" class="act" target="_blank">更多>></a>
+                 </div>`);
+        oDiv.appendTo($('.market'));
+    },function(){
+    	console.log('error');
+    });
+    
+    /*公司数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/companyList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div><strong><a href="${res[1].tappendix}" target="_blank">${res[1].title}</a></strong>
+                 <dl class="details-left fl">
+                     <dt>常见信息</dt>
+                     <dd class="elis"><a href="${res[1].qappendix}" target="_blank">${res[1].qname}</a></dd>
+                 </dl>
+                 <dl class="details-right fl">
+                     <dt>新闻资讯</dt>
+                     <dd class="elis"><a href="${res[1].nappendix1}" target="_blank">${res[1].nname1}</a></dd>
+                     <dd class="elis"><a href="${res[1].nappendix2}" target="_blank">${res[1].name2}</a></dd>
+
+                 </dl>
+                  <a href="Enterprisecredit.html" class="act" style="margin-top: 20px;" target="_blank">更多>></a>
+                 </div>`);
+        oDiv.appendTo($('.company'));
+    },function(){
+    	console.log('error');
+    });
+    
+    /*贸易数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/jtradeIList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div><strong style="width: 280px; margin-left: -140px">${res[1].tade} <p>${res[1].english}</p></strong>
+                 <dl class="details-left fl">
+                     <dt>常见信息</dt>
+                     <dd class="elis"><a href="javascript:;" target="_blank">${res[1].display}</a></dd>
+                 </dl>
+                 <dl class="details-right fl">
+                     <dt>新闻资讯</dt>
+                     <dd class="elis"><a href="${res[1].appendx1}" target="_blank">${res[1].t1}</a></dd>
+                     <dd class="elis"><a href="${res[1].appendx2}" target="_blank">${res[1].t2}</a></dd>
+                     <dd class="elis"><a href="${res[1].appendx3}" target="_blank">${res[1].t3}</a></dd>
+                 </dl>
+                  <a href="Trade.html" class="act" style="margin-top: 20px;" target="_blank">更多>></a>
+                  </div>`);
+
+        oDiv.appendTo($('.trade'));
+    },function(){
+    	console.log('error');
+    });
+    
+    $(`<div><strong>投资 <p style="margin-left: 5px">INVESTMENT</p></strong></div>`).appendTo($('.investment'));
+    
+    /*一带一路数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/jYdList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div><strong><a href="JavaScript:;" target="_blank">一带一路</a></strong><dl class="details-left fl">
+                     <dd class="elis"><a href="${res[1].happendix1}" target="_blank">${res[1].htitle1}</a></dd>
+                     <dd class="elis"><a href="${res[1].happendix2}" target="_blank">${res[1].htitle2}</a></dd>
+                 </dl>
+                 <dl class="details-right fl">
+                     <dd class="elis"><a href="${res[1].nappendix1}" target="_blank">${res[1].news1}</a></dd>
+                     <dd class="elis"><a href="${res[1].nappendix2}" target="_blank">${res[1].news2}</a></dd>
+                 </dl>
+                  <a href="consultation.html" class="act" style="position: absolute;bottom: -140px" target="_blank">更多>></a>
+                 </div>`);
+        oDiv.appendTo($('.thebelt'));
+    },function(){
+    	console.log('error');
+    });
+    
+    /*旅游数据交互*/
+    $.ajax({
+    	url: 'http://101.201.154.205:9092/ZD_2/tourIList',
+    	data: {
+    		t: Math.random()
+    	},
+    	dataType: 'json',
+    	jsonp: 'callback'
+    }).then(function(res){
+		var oDiv = $(`<div><strong><a href="${res[1].appendx}" target="_blank">${res[1].title}</a> <p>${res[1].english}</p></strong></div>`);
+        oDiv.appendTo($('.tourism'));
+    },function(){
+    	console.log('error');
+    });
+</script>
+</body>
+</html>

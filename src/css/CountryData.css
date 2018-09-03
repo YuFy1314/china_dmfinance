@@ -1,0 +1,464 @@
+/*国别数据样式*/
+.searchBar1 {
+  user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar1 .newBar {
+  width: 650px;
+  height: 50px;
+  float: left;
+}
+.searchBar1 .newBar ul li {
+  width: 120px;
+  height: 100%;
+  margin-right: 10px;
+  line-height: 50px;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar1 .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar1 .newBar ul li ol {
+  position: absolute;
+  width: 120px;
+  display: none;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.searchBar1 .newBar ul li ol li {
+  position: relative;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+.searchBar1 .newBar ul li ol li .aann {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  left: 120px;
+  top: 0;
+  border-left: 1px solid #DCDCDC;
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+.searchBar1 .newBar ul li ol li .aann div {
+  width: 120px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li .aann div a {
+  color: #fff;
+}
+.searchBar1 .newBar ul li ol li:hover .aann {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active2:hover ol {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover ol li a {
+  color: #797979;
+}
+.searchBar1 .newBar ul .active2:hover ol li a:hover {
+  color: #005bac;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.searchBar1 .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar1 .newBar ul .active {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar {
+  -webkit-user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar .newBar {
+  width: 824px;
+  float: left;
+}
+.searchBar .newBar ul {
+  background: #eeeeee;
+}
+.searchBar .newBar ul li {
+  padding: 13px 32px;
+  border: 2px solid #eee;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar .newBar ul .active2:hover {
+  background: #fff;
+  border-bottom: 2px solid #fff;
+}
+.searchBar .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .newBar ul .active {
+  border-bottom: 2px solid #fff;
+  background: #fff;
+}
+.searchBar .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .search {
+  float: right;
+  height: 46px;
+  border: 2px solid #a0a0a0;
+}
+.searchBar .search i {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 46px;
+  background: url("../images/searchhui.png") center no-repeat;
+}
+.searchBar .search input {
+  outline: none;
+  border: 0;
+  width: 262px;
+  height: 44px;
+  float: left;
+}
+.searchBar .search ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search em {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  background: #a0a0a0;
+  color: #fff;
+  font-style: normal;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  cursor: pointer;
+}
+nav {
+  -webkit-user-select: none;
+  width: 100%;
+  height: 60px;
+  background: #283c5e;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+}
+nav ul li {
+  padding: 0 30px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+}
+nav ul li a {
+  font-size: 18px;
+  color: #E4E4E4;
+}
+nav ul li:hover a {
+  text-decoration: underline;
+}
+nav ul li.active {
+  background: linear-gradient(#3e488d, #113972);
+  background: -webkit-linear-gradient(#3e488d, #113972);
+  background: -moz-linear-gradient(#3e488d, #113972);
+  background: -ms-linear-gradient(#3e488d, #113972);
+}
+.content {
+  width: 100%;
+}
+.content .tab-bar {
+  width: 100%;
+  margin: 20px auto;
+  -webkit-user-select: none;
+  height: 60px;
+  background: #283c5e;
+}
+.content .tab-bar ul {
+  width: 850px;
+  height: 100%;
+  float: left;
+}
+.content .tab-bar ul > li {
+  padding: 0 30px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  position: relative;
+}
+.content .tab-bar ul > li a {
+  font-size: 18px;
+  color: #E4E4E4;
+}
+.content .tab-bar ul > li:hover > a {
+  text-decoration: underline;
+}
+.content .tab-bar ul > li ul {
+  position: absolute;
+  display: none;
+  top: 60;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.4);
+}
+.content .tab-bar ul > li ul li {
+  float: left;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.content .tab-bar ul > li ul li a {
+  font-size: 16px;
+  color: #797979;
+}
+.content .tab-bar ul > li ul li a:hover {
+  text-decoration: underline;
+  color: #005bac;
+}
+.content .tab-bar ul li:hover ul {
+  display: block;
+}
+.content .tab-bar ul li.active {
+  background: linear-gradient(#3e488d, #113972);
+  background: -webkit-linear-gradient(#3e488d, #113972);
+  background: -moz-linear-gradient(#3e488d, #113972);
+  background: -ms-linear-gradient(#3e488d, #113972);
+}
+.content .tab-bar div {
+  float: right;
+  width: 350px;
+  text-align: center;
+  line-height: 60px;
+}
+.content .tab-bar div .z {
+  font-size: 14px;
+  color: #fff;
+}
+.content .tab-bar div input {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 0;
+  outline: hidden;
+  font-size: 16px;
+}
+.content .tab-list {
+  width: 100%;
+  display: none;
+  margin-bottom: 40px;
+}
+.content .tab-list .querydata {
+  width: 822px;
+  margin: 3px auto;
+}
+.content .tab-list .querydata input {
+  border: 0;
+  outline: none;
+  border: 1px solid #005bac;
+  width: 710px;
+  padding-left: 17px;
+  height: 51px;
+}
+.content .tab-list .querydata ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 18px;
+}
+.content .tab-list .querydata :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 18px;
+}
+.content .tab-list .querydata ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 18px;
+}
+.content .tab-list .querydata :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 18px;
+}
+.content .tab-list .querydata div {
+  width: 91px;
+  height: 53px;
+  border: 1px solid #005bac;
+  background: #005bac;
+  cursor: pointer;
+}
+.content .tab-list .querydata div img {
+  width: 31px;
+  height: 31px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+.content .tab-list .choose {
+  width: 822px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.content .tab-list .choose .choose-left {
+  width: 729px;
+}
+.content .tab-list .choose .choose-left label {
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  margin: 10px 34px 10px 0;
+}
+.content .tab-list .choose .choose-left label input[type="checkbox"] {
+  display: none;
+}
+.content .tab-list .choose .choose-left label input[type="checkbox"]:checked + i {
+  background: #283c5e;
+}
+.content .tab-list .choose .choose-left label i {
+  font-size: 18px;
+  font-style: normal;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  color: #fff;
+  vertical-align: middle;
+  margin: -2px 8px 1px 0;
+  border: 1px solid #283c5e;
+}
+.content .tab-list .choose .choose-right {
+  width: 93px;
+}
+.content .tab-list .choose .choose-right span {
+  font-size: 16px;
+  color: #434242;
+  cursor: pointer;
+  padding: 10px 0;
+  display: none;
+}
+.content .tab-list .choose .choose-right span i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+.content .tab-list .choose .choose-right span:first-child i {
+  background: url(../images/arrow-down.png) no-repeat;
+}
+.content .tab-list .choose .choose-right span:last-child i {
+  background: url(../images/arrow-up.png) no-repeat;
+}
+.content .tab-list .choose .choose-right span.active {
+  display: block;
+}
+.content .tab-list table {
+  height: 162px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.content .tab-list table tr th {
+  width: 238px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  float: left;
+  background: #92b9db;
+  color: #212121;
+  font-size: 18px;
+  margin-left: 1px;
+  box-shadow: 0px 0px 2px #a8adb2;
+}
+.content .tab-list table tr td {
+  width: 238px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  float: left;
+  background: #92b9db;
+  color: #f5f5f5;
+  font-size: 16px;
+  margin-left: 1px;
+  box-shadow: 0px 0px 2px #a8adb2;
+}
+.content .tab-list table tr td a {
+  color: #f5f5f5;
+  font-size: 16px;
+}
+.content .tab-list table tr td a:hover {
+  text-decoration: underline;
+}
+.content .tab-list table tr:nth-child(even) td {
+  background: #a2c3e0;
+}
+.content .tab-list.active {
+  display: block;
+}
+.content .list6 table tr th {
+  width: 198px;
+}
+.content .list6 table tr td {
+  width: 198px;
+}

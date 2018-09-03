@@ -1,0 +1,294 @@
+<!--
+	作者：苏日俪格
+	时间：2018-03-21
+	描述：企业征信
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>企业征信</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Enterprisecredit.css"/>
+	</head>
+	<body>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-20
+        	描述：公共头部head
+        -->
+		<embed type="text/html" src="head.html" width="100%" height="104"></embed>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-20
+        	描述：企业征信导航
+        -->
+		<div class="container">
+			<nav>
+				<ul class="clearfix">
+					<li><a href="javascript:;">中国</a></li>
+            		<li><a href="javascript:;">新加坡</a></li>
+            		<li><a href="javascript:;">马来西亚</a></li>
+            		<li><a href="javascript:;">泰国</a></li>
+            		<li><a href="javascript:;">菲律宾</a></li>
+            		<li><a href="javascript:;">印度尼西亚</a></li>
+            		<li><a href="javascript:;">越南</a></li>
+            		<li><a href="javascript:;">文莱</a></li>
+            		<li><a href="javascript:;">柬埔寨</a></li>
+            		<li><a href="javascript:;">老挝</a></li>
+            		<li><a href="javascript:;">缅甸</a></li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="tab-bar clearfix">
+					<div class="tab-bar-one clearfix">
+						<i class="active"></i><span>征信报告</span>
+					</div>
+					<div class="tab-bar-two clearfix ml">
+						<i></i><span>黑名单目录</span>
+					</div>
+					<div class="tab-bar-two clearfix ml">
+						<i></i><span>基本信息</span>
+					</div>
+				</div>
+				<div class="tab-list list1 active">
+					<div class="querydata clearfix">
+	            		<input class="fl" type="text" value="" placeholder="请输入法人及其他组织名称或注册号" />
+	            		<div id="search" class="fl">
+	            			<img src="images/20180319173315.png" alt="search" title="点击搜索"/>
+	            		</div>
+	            	</div>
+	            	<div class="choose clearfix">
+	            		<div class="choose-left fl">
+	            			<label><input type="checkbox" /><i>✓</i>未分类</label>
+		            		<label><input type="checkbox" /><i>✓</i>盐行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>海关领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>保险领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>公安领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电力行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>上市公司</label>
+		            		<label><input type="checkbox" /><i>✓</i>统计领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>农资领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>税收征管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>食品药品监管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>财政性资金管理适用领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>劳动保障黑名单</label>
+		            		<label><input type="checkbox" /><i>✓</i>安全生产领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>工商监管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>环境保护领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>质量安全领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电子商务及分享经济领域炒信行为相关失信主体</label>
+		            		<label><input type="checkbox" /><i>✓</i>未分类</label>
+		            		<label><input type="checkbox" /><i>✓</i>盐行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>海关领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>保险领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>公安领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电力行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>上市公司</label>
+		            		<label><input type="checkbox" /><i>✓</i>统计领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>农资领域</label>
+	            		</div>
+	            		<div class="choose-right fl">
+	            			<span class="arrow-down ">展开<i></i></span>
+	            			<span class="arrow-up active">收起<i></i></span>
+	            		</div>
+	            	</div>
+	            	<table border="0" cellspacing="0" cellpadding="0">
+	            		<tr>
+	            			<th>发布日期</th>
+	            			<th>发布机构</th>
+	            			<th>被评级企业</th>
+	            			<th>标题</th>
+	            			<th>附件(点击下载)</th>
+	            		</tr>
+	            	</table>
+				</div>
+				<div class="tab-list list2">
+					<div class="querydata clearfix">
+	            		<input class="fl" type="text" value="" placeholder="请输入法人及其他组织名称或注册号" />
+	            		<div id="search" class="fl">
+	            			<img src="images/20180319173315.png" alt="search" title="点击搜索"/>
+	            		</div>
+	            	</div>
+	            	<div class="choose clearfix">
+	            		<div class="choose-left fl">
+		            		<label><input type="checkbox" /><i>✓</i>保险领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>公安领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电力行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>上市公司</label>
+		            		<label><input type="checkbox" /><i>✓</i>统计领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>农资领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>税收征管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>食品药品监管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>财政性资金管理适用领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>劳动保障黑名单</label>
+		            		<label><input type="checkbox" /><i>✓</i>安全生产领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>工商监管领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>环境保护领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>质量安全领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电子商务及分享经济领域炒信行为相关失信主体</label>
+		            		<label><input type="checkbox" /><i>✓</i>未分类</label>
+		            		<label><input type="checkbox" /><i>✓</i>盐行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>海关领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>保险领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>公安领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>电力行业</label>
+		            		<label><input type="checkbox" /><i>✓</i>上市公司</label>
+		            		<label><input type="checkbox" /><i>✓</i>统计领域</label>
+		            		<label><input type="checkbox" /><i>✓</i>农资领域</label>
+	            		</div>
+	            		<div class="choose-right fl">
+	            			<span class="arrow-down ">展开<i></i></span>
+	            			<span class="arrow-up active">收起<i></i></span>
+	            		</div>
+	            	</div>
+	            	<table border="0" cellspacing="0" cellpadding="0">
+	            		<tr>
+	            			<th>法人及其他组织名称</th>
+	            			<th>失信领域</th>
+	            			<th>注册号、统一社会信用代码</th>
+	            			<th>发布时间</th>
+	            			<th>发布机关</th>
+	            		</tr>
+	            		<tr>
+	            			<td><a href="javascript:;">西安鑫磊实业有限公司</a></td>
+	            			<td>劳动保障黑名单</td>
+	            			<td>610100100344027</td>
+	            			<td>2017-07-19</td>
+	            			<td>省人力资源和社会保障厅</td>
+	            		</tr>
+	            		<tr>
+	            			<td><a href="javascript:;">西安鑫磊实业有限公司</a></td>
+	            			<td>劳动保障黑名单</td>
+	            			<td>610100100344027</td>
+	            			<td>2017-07-19</td>
+	            			<td>省人力资源和社会保障厅</td>
+	            		</tr>
+	            	</table>
+				</div>
+				<div class="tab-list list2"></div>
+			</div>
+		</div>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-20
+        	描述：公用底部 foot
+        -->
+        <embed type="text/html" src="foot.html" width="100%" height="150" style="margin-top: 50px;"></embed>
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：回到顶部
+        -->
+		<div class="returntop"></div>
+   		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			tabBar($('.tab-bar div'),$('.tab-list'));
+		</script>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-22
+        	描述：数据交互
+        -->
+        <script type="text/javascript">
+        	$.ajax({
+        		url: "http://101.201.154.205:9092/ZD_2/zbList",
+        		data: {
+        			t: Math.random()
+        		},
+        		dataType: 'json',
+        		jsonp: 'callback'
+        	}).then(function(res){
+        	    console.log(res);
+        		for(var i=0; i<res.length; i++){
+    				if (res[i].appendix.indexOf('http') == -1) {
+        				var oTr = $(`<tr>
+	            			<td>${res[i].date}</td>
+	            			<td>${res[i].fname}</td>
+	            			<td>${res[i].bname}</td>
+	            			<td>${res[i].title}</td>
+	            			<td><a href="files/${res[i].appendix}">预览</a>&nbsp;&nbsp;&nbsp;<a href="files/${res[i].appendix}" download="${res[i].title}">下载</a></td>
+	            		</tr><tr>
+	            			<td>${res[i].date}</td>
+	            			<td>${res[i].fname}</td>
+	            			<td>${res[i].bname}</td>
+	            			<td>${res[i].title}</td>
+	            			<td><a href="files/${res[i].appendix}">预览</a>&nbsp;&nbsp;&nbsp;<a href="files/${res[i].appendix}" download="${res[i].title}">下载</a></td>
+	            		</tr>`);
+        			} else {
+        				var oTr = $(`<tr>
+	            			<td>${res[i].date}</td>
+	            			<td>${res[i].fname}</td>
+	            			<td>${res[i].bname}</td>
+	            			<td>${res[i].title}</td>
+	            			<td><a href="${res[i].appendix}">查看</a></td>
+	            		</tr><tr>
+	            			<td>${res[i].date}</td>
+	            			<td>${res[i].fname}</td>
+	            			<td>${res[i].bname}</td>
+	            			<td>${res[i].title}</td>
+	            			<td><a href="${res[i].appendix}">查看</a></td>
+	            		</tr>`);
+        			}
+            		oTr.appendTo($('.list1 table'));
+        		}
+        	},function(){
+        		console.log('error');
+        	});
+        </script>
+        <script type="text/javascript">
+        	$.ajax({
+        		url: "http://101.201.154.205:9092/ZD_2/zsList",
+        		data: {
+        			t: Math.random()
+        		},
+        		dataType: 'json',
+        		jsonp: 'callback'
+        	}).then(function(res){
+        		for(var i=0; i<res.length; i++){
+					var oTable = $(`<tr>
+            			<td><a href="Blacklist.html" target="_blank">${res[i].name}</a></td>
+            			<td>${res[i].filed}</td>
+            			<td>${res[i].register}</td>
+            			<td>${res[i].startdate}</td>
+            			<td>${res[i].fname}</td>
+            		</tr>`);
+	            	oTable.appendTo($('.list2 table'));
+        		}
+        	},function(){
+        		console.log('error');
+        	});
+        </script>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-21
+        	描述：点击展开收起
+        -->
+        <script type="text/javascript">
+    		function arrow(){
+    			$('.arrow-down').on('click',function(){
+	    			$('.choose-left').stop().animate({
+						'height': 252
+					});
+	    			$('.arrow-down').hide().siblings().addClass('active').show();
+	    		});
+				$('.arrow-up').on('click',function(){
+					$('.choose-left').css({
+						'overflow': 'hidden'
+					});
+					$('.choose-left').stop().animate({
+						'height': 42
+					});
+					$('.arrow-up').hide().siblings().addClass('active').show();
+				});
+    		}
+    		arrow();
+		</script>
+	
+	</body>
+</html>

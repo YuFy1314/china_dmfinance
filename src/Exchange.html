@@ -1,0 +1,272 @@
+<!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：外汇交易界面
+        -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外汇交易界面</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Exchange.css"/>
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：公共头部
+        -->
+        <embed type="text/html" src="head.html" width="100%" height="104"></embed>
+        <!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：展示图
+        -->
+        <div class="container banner">
+        	<img src="images/Exchange.png" />
+        </div>
+        <!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：数据列表
+        -->
+        <div class="box container">
+        	<div class="stream">
+        		实时外汇牌价
+        	</div>
+        	<div class="column"></div>
+        	<div class="title">
+        		Current FX Price
+        	</div>
+        </div>
+        <!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：新闻资讯
+        -->
+        <div class="container form">
+        	<table border="0" class="tab1"  cellspacing="0" cellpadding="0" >
+        		<tr class="one">
+        			<th style="font-weight: bold;"></th>
+        			<th>现价</th>
+        			<th>跌涨</th>
+        			<th>买价</th>
+        			<th>卖价</th>
+        			<th>日期</th>
+        			<th>时间</th>
+        			
+        		</tr>
+        		<!--<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>USD SGD</td>
+        			<td>1.326</td>
+        			<td>-0.0047</td>
+        			<td>1.3257</td>
+        			<td>1.3332</td>
+        			<td>2018-01-08</td>
+        			<td>9:06</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>-->
+        	</table>
+        </div>
+        <div class="box2 container">
+        	<div class="stream">
+        		新闻资讯
+        	</div>
+        	<div class="column"></div>
+        	<div class="title">
+        		NEWS AND INFORMATION
+        	</div>
+        </div>
+        <div class="new container clearfix">
+        	<ul class="left fl">
+        		
+        	</ul>
+        	<ul class="right fr">
+        		
+        	</ul>
+        </div>
+        <!--
+        	作者：老于
+        	时间：2018-03-19
+        	描述：返回顶部
+        -->
+        <div class="returntop"></div>
+        <!--
+        	作者：老于
+        	时间：2018-03-20
+        	描述：引入底部
+        -->
+        <embed type="text/html" src="foot.html" width="100%" height="150"></embed>
+        <script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        	
+        	function wacList(){
+        		$.ajax({
+        			url:"http://101.201.154.205:9092/ZD_2/wacList",
+        			data:{
+        				t: Math.random()
+        			},
+        			dataType: 'json',
+			        jsonp: 'callback'
+        		}).then(function(res){
+        			console.log(res)
+        			for(var i=0;i<9;i++){
+        				var oTd = $(`<tr>
+        			<td style="font-weight: bold;">${res[0][i].jname}</td>
+        			<td>${res[0][i].nprice}</td>
+        			<td>${res[0][i].fd}</td>
+        			<td>${res[0][i].buyprice}</td>
+        			<td>${res[0][i].sellprice}</td>
+        			<td>${res[0][i].date}</td>
+        			<td>${res[0][i].name}</td>
+        			<td class="bx">
+        				<div class="bxx">
+        					<a href="transaction.html" class="ds">交易</a>
+        				</div>
+        			</td>
+        		</tr>`)
+        				oTd.appendTo($('.tab1'))
+        			}
+        			$('.bxx').on("click",function(){
+        		
+        		$(this).children($('.ds')).css({
+	        			"display":"inline-block"
+	        		});
+	        		 window.location.href="transaction.html";
+	        	});
+        		},function(err){
+        			console.log(err)
+        		})
+        	}
+        	wacList();
+        	function wnList(oEle,oEle1){
+        		$.ajax({
+        			url:"http://101.201.154.205:9092/ZD_2/wnList",
+        			data:{
+        				t: Math.random()
+        			},
+        			dataType: 'json',
+			        jsonp: 'callback'
+        		}).then(function(res){
+        			/*console.log(res)*/
+        			oEle.empty();
+			        oEle1.empty();
+			        var arr=['news.png','pc1.jpg','pexels-photo-534216.png','pexels-photo-936722.png','pic_07.jpg','pic_20.jpg','pic_16.jpg','pic_14.jpg','pic_24.jpg','pic_24.jpg'];
+			        for(var i=0;i<5;i++){
+			        	var oLi = $(`<li>
+        			<a href="${res[i].appendix}">
+        				<div class="ig fl">
+        					<img src="images/${arr[i]}" />
+        				</div>
+        				<div class="nei fl">
+        					<h1>${res[i].title}</h1>
+        					<p>${res[i].intro}</p>
+        					<span>2018-03-15 08:21:19 <br/>汇通网</span>
+        				</div>
+        			</a>
+        		</li>`)
+			        	oLi.appendTo(oEle);
+			        };
+			        
+			        for(var i=5;i<10;i++){
+			        	var oLi = $(`<li>
+        				<a href="${res[i].appendix}">
+        				<div class="ig fl">
+        					<img src="images/${arr[i]}" />
+        				</div>
+        				<div class="nei fl">
+        					<h1>${res[i].title}</h1>
+        					<p>${res[i].intro}</p>
+        					<span>2018-03-15 08:21:19 <br/>汇通网</span>
+        				</div>
+        			</a>
+        		</li>`)
+			        	oLi.appendTo(oEle1);
+			        };
+			        
+        		},function(err){
+        			console.log(err)
+        		})
+        	}
+        	wnList($('.new .left'),$('.new .right'));
+        	
+        </script>
+	</body>
+</html>

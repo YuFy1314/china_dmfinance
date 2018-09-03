@@ -1,0 +1,314 @@
+.searchBar1 {
+  user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar1 .newBar {
+  width: 650px;
+  height: 50px;
+  float: left;
+}
+.searchBar1 .newBar ul li {
+  width: 120px;
+  height: 100%;
+  margin-right: 10px;
+  line-height: 50px;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar1 .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar1 .newBar ul li ol {
+  position: absolute;
+  width: 120px;
+  display: none;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.searchBar1 .newBar ul li ol li {
+  position: relative;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+.searchBar1 .newBar ul li ol li .aann {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  left: 120px;
+  top: 0;
+  border-left: 1px solid #DCDCDC;
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+.searchBar1 .newBar ul li ol li .aann div {
+  width: 120px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li .aann div a {
+  color: #fff;
+}
+.searchBar1 .newBar ul li ol li:hover .aann {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active2:hover ol {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover ol li a {
+  color: #797979;
+}
+.searchBar1 .newBar ul .active2:hover ol li a:hover {
+  color: #005bac;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.searchBar1 .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar1 .newBar ul .active {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar {
+  user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar .newBar {
+  width: 824px;
+  float: left;
+}
+.searchBar .newBar ul {
+  background: #eeeeee;
+}
+.searchBar .newBar ul li {
+  padding: 13px  32px;
+  border: 2px solid #eee;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar .newBar ul .active2:hover {
+  background: #fff;
+  border-bottom: 2px  solid #fff;
+}
+.searchBar .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .newBar ul .active {
+  border-bottom: 2px  solid #fff;
+  background: #fff;
+}
+.searchBar .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .search {
+  float: right;
+  height: 46px;
+  border: 2px solid #a0a0a0;
+}
+.searchBar .search i {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 46px;
+  background: url(../images/searchhui.png) center no-repeat;
+}
+.searchBar .search input {
+  outline: none;
+  border: 0;
+  width: 262px;
+  height: 44px;
+  float: left;
+}
+.searchBar .search ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search em {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  background: #a0a0a0;
+  color: #fff;
+  font-style: normal;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  cursor: pointer;
+}
+.assetsBar {
+  margin-bottom: 30px;
+  height: 55px;
+  border-bottom: 1px solid #eeeeee;
+}
+.assetsBar .assetsBarUl li {
+  width: 120px;
+  height: 44px;
+  float: left;
+  margin-left: 15px;
+}
+.assetsBar .assetsBarUl li a {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #5b5b5b;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 44px;
+  line-height: 20px;
+}
+.assetsBar .assetsBarUl li a.active {
+  background: #005bac;
+  color: #fff;
+}
+.assetsBar .assetsBarUl li a:hover {
+  background: #005bac;
+  color: #fff;
+}
+.assetsBar .pois {
+  margin-top: 10px;
+}
+.assetsBar .pois i {
+  font-style: normal;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #999;
+}
+.assetsBar .pois i b {
+  color: #005bac;
+}
+.exchange .exchangeSurface {
+  width: 720px;
+}
+.exchange .exchangeSurface .exSur {
+  margin-bottom: 44px;
+}
+.exchange .exchangeSurface .exSur .tName {
+  display: block;
+  width: 720px;
+  height: 35px;
+  background: #eeeeee;
+  line-height: 35px;
+  font-size: 16px;
+  color: #313131;
+  font-family: "微软雅黑";
+}
+.exchange .exchangeSurface .exSur table tr th {
+  width: 180px;
+  height: 35px;
+}
+.exchange .exchangeSurface .exSur table tr td {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  width: 120px;
+  height: 35px;
+  color: #5b5b5b;
+}
+.exchange .exchangeSurface .exSur table tr .one {
+  font-weight: bold;
+}
+.exchange .exchangeSurface .exSur table tr:nth-child(odd) td {
+  background: #eee;
+}
+.exchange .exchangeChart {
+  width: 450px;
+  height: 160px;
+  border: 1px solid #ececec;
+}
+.exchange .exchangeChart .exBox {
+  width: 100%;
+  height: 34px;
+  background: #eeeeee;
+}
+.exchange .exchangeChart .exBox h1 {
+  font-size: 15px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  text-align: initial;
+  line-height: 34px;
+  margin-left: 20px;
+  color: #313131;
+}
+.exchange .exchangeChart .exBox2 {
+  width: 410px;
+  margin: 20px auto;
+}
+.exchange .exchangeChart .exBox2 h1 {
+  font-size: 15px;
+  font-family: "微软雅黑";
+  line-height: 23px;
+  color: #afafaf;
+  width: 100%;
+  height: 100%;
+  text-align: initial;
+}
+.eChart {
+  margin-bottom: 45px;
+  height: 367px;
+  color: #FFFFFF;
+}
+.b {
+  width: 720px;
+  margin-bottom: 20px;
+}
+.b .dat {
+  font-size: 15px;
+  outline: none;
+}

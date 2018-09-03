@@ -1,0 +1,475 @@
+.banner {
+  width: 100%;
+  height: 472px;
+  position: relative;
+}
+.banner ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.banner ul li {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+.banner ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/1.png) center right no-repeat;
+  opacity: rgba(255, 255, 255, 0.7);
+  background-size: cover;
+}
+.banner ul li .opacity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.3);
+}
+.banner ul li .opacity .text {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  color: #303030;
+}
+.banner ul li .opacity .text p {
+  margin: 10px auto;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.banner ul li .opacity .text span {
+  white-space: pre-wrap;
+  font-size: 28px;
+  font-family: "微软雅黑";
+}
+.banner ul li.active {
+  display: block;
+}
+.banner ol {
+  position: absolute;
+  width: 150px;
+  height: 7px;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -75px;
+}
+.banner ol li {
+  float: left;
+  width: 55px;
+  height: 7px;
+  margin: 0 10px;
+  background: #596172;
+  cursor: pointer;
+}
+.banner ol li.active {
+  background: #252525;
+}
+/*信息资讯*/
+.infoplatform {
+  width: 100%;
+  height: 396px;
+}
+.infoplatform .title {
+  width: 100%;
+  height: 67px;
+}
+.infoplatform .title h2 {
+  margin-top: 44px;
+}
+.infoplatform .title h2 a {
+  font-size: 18px;
+  color: #17294a;
+  font-weight: bold;
+}
+.infoplatform .title em {
+  width: 34px;
+  height: 1px;
+  display: block;
+  margin: 9px auto;
+  background: #fbc826;
+}
+.infoplatform .title p {
+  color: #61697b;
+}
+.infoplatform .infoplatform-content .infoplatform-content-pic {
+  width: 484px;
+  height: 241px;
+}
+.infoplatform .infoplatform-content .infoplatform-content-pic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.infoplatform .infoplatform-content .infoplatform-content-pic a img {
+  width: 100%;
+  height: 100%;
+}
+.infoplatform .infoplatform-content .infoplatform-content-pic a img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transition: 1s all linear;
+  -webkit-transition: 1s all linear;
+  -moz-transition: 1s all linear;
+  -ms-transition: 1s all linear;
+}
+.infoplatform .infoplatform-content .newsplatform {
+  width: 656px;
+  height: 241px;
+}
+.infoplatform .infoplatform-content .newsplatform span a {
+  display: block;
+  width: 114px;
+  height: 28px;
+  line-height: 28px;
+  background: #005bac;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.infoplatform .infoplatform-content .newsplatform ul {
+  width: 100%;
+  height: 213px;
+  overflow: hidden;
+  text-align: left;
+}
+.infoplatform .infoplatform-content .newsplatform ul li {
+  width: 100%;
+  height: 57px;
+  margin-top: 14px;
+  float: left;
+}
+.infoplatform .infoplatform-content .newsplatform ul li span {
+  display: block;
+  width: 59px;
+  height: 55px;
+  border: 1px solid #bfbfbf;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.infoplatform .infoplatform-content .newsplatform ul li span .day {
+  color: #5b5959;
+  font-size: 24px;
+  font-weight: bold;
+}
+.infoplatform .infoplatform-content .newsplatform ul li span .year {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.infoplatform .infoplatform-content .newsplatform ul li .news-list {
+  width: 541px;
+  height: 57px;
+}
+.infoplatform .infoplatform-content .newsplatform ul li .news-list h3 a {
+  font-size: 14px;
+  color: #545454;
+  font-weight: bold;
+}
+.infoplatform .infoplatform-content .newsplatform ul li .news-list h3 a:hover {
+  text-decoration: underline;
+}
+.infoplatform .infoplatform-content .newsplatform ul li .news-list p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #919090;
+}
+/*法律法规*/
+.lawregulation {
+  width: 100%;
+  height: 315px;
+  background: #eee;
+}
+.lawregulation h1 {
+  padding-top: 50px;
+  font-size: 24px;
+  color: #303030;
+  font-weight: bold;
+}
+.lawregulation h2 {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #303030;
+}
+.lawregulation ul {
+  width: 804px;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.lawregulation ul li {
+  float: left;
+  color: #303030;
+  margin-right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.lawregulation ul li .triangle {
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 18px solid #005bac;
+  margin: 0 auto;
+  margin-top: 4px;
+  opacity: 0;
+}
+.lawregulation ul li:hover .triangle {
+  transition: .5s all linear;
+  -webkit-transition: .5s all linear;
+  -moz-transition: .5s all linear;
+  -ms-transition: .5s all linear;
+  opacity: 1;
+}
+.lawregulation .querydata {
+  width: 804px;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+.lawregulation .querydata input {
+  border: 0;
+  outline: none;
+  border: 1px solid #005bac;
+  width: 691px;
+  padding-left: 17px;
+  height: 51px;
+}
+.lawregulation .querydata ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 18px;
+  color: #ccc;
+}
+.lawregulation .querydata :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 18px;
+  color: #ccc;
+}
+.lawregulation .querydata ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 18px;
+  color: #ccc;
+}
+.lawregulation .querydata :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 18px;
+  color: #ccc;
+}
+.lawregulation .querydata div {
+  width: 90px;
+  height: 53px;
+  border: 1px solid #005bac;
+  background: #005bac;
+  cursor: pointer;
+}
+.lawregulation .querydata div img {
+  width: 31px;
+  height: 31px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+/*外汇交易*/
+.transaction {
+  width: 100%;
+  height: 354px;
+}
+.transaction .title {
+  width: 100%;
+  height: 67px;
+}
+.transaction .title h2 {
+  margin-top: 44px;
+}
+.transaction .title h2 a {
+  font-size: 18px;
+  color: #17294a;
+  font-weight: bold;
+}
+.transaction .title em {
+  width: 34px;
+  height: 1px;
+  display: block;
+  margin: 9px auto;
+  background: #fbc826;
+}
+.transaction .title p {
+  color: #61697b;
+}
+.transaction .transaction-content {
+  width: 100%;
+  height: 241px;
+  margin-top: 21px;
+}
+.transaction .transaction-content .transaction-content-left {
+  width: 546px;
+  height: 100%;
+}
+.transaction .transaction-content .transaction-content-left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.transaction .transaction-content .transaction-content-left a img {
+  width: 100%;
+  height: 100%;
+}
+.transaction .transaction-content .transaction-content-left a img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transition: 1s all linear;
+  -webkit-transition: 1s all linear;
+  -moz-transition: 1s all linear;
+  -ms-transition: 1s all linear;
+}
+.transaction .transaction-content .transaction-content-center {
+  width: 223px;
+  height: 100%;
+  margin-left: 36px;
+}
+.transaction .transaction-content .transaction-content-center a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.transaction .transaction-content .transaction-content-center a img {
+  width: 100%;
+  height: 100%;
+}
+.transaction .transaction-content .transaction-content-center a img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transition: 1s all linear;
+  -webkit-transition: 1s all linear;
+  -moz-transition: 1s all linear;
+  -ms-transition: 1s all linear;
+}
+.transaction .transaction-content .transaction-content-right {
+  width: 375px;
+  height: 100%;
+  margin-left: 20px;
+}
+.transaction .transaction-content .transaction-content-right span a {
+  display: block;
+  width: 114px;
+  height: 28px;
+  line-height: 28px;
+  background: #005bac;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.transaction .transaction-content .transaction-content-right ul {
+  width: 100%;
+  height: 213px;
+  overflow: hidden;
+  text-align: left;
+}
+.transaction .transaction-content .transaction-content-right ul li {
+  width: 100%;
+  height: 57px;
+  margin-top: 14px;
+  float: left;
+}
+.transaction .transaction-content .transaction-content-right ul li span {
+  display: block;
+  width: 59px;
+  height: 55px;
+  border: 1px solid #bfbfbf;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.transaction .transaction-content .transaction-content-right ul li span .day {
+  color: #5b5959;
+  font-size: 24px;
+  font-weight: bold;
+}
+.transaction .transaction-content .transaction-content-right ul li span .year {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.transaction .transaction-content .transaction-content-right ul li .news-list {
+  width: 259px;
+  height: 57px;
+}
+.transaction .transaction-content .transaction-content-right ul li .news-list h3 a {
+  font-size: 14px;
+  color: #545454;
+  font-weight: bold;
+}
+.transaction .transaction-content .transaction-content-right ul li .news-list h3 a:hover {
+  text-decoration: underline;
+}
+.transaction .transaction-content .transaction-content-right ul li .news-list p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #919090;
+}
+/*企业征信*/
+.enterprisecredit {
+  width: 100%;
+  height: 354px;
+}
+.enterprisecredit .title {
+  width: 100%;
+  height: 67px;
+}
+.enterprisecredit .title h2 {
+  margin-top: 44px;
+}
+.enterprisecredit .title h2 a {
+  font-size: 18px;
+  color: #17294a;
+  font-weight: bold;
+}
+.enterprisecredit .title em {
+  width: 34px;
+  height: 1px;
+  display: block;
+  margin: 9px auto;
+  background: #fbc826;
+}
+.enterprisecredit .title p {
+  color: #61697b;
+}
+.enterprisecredit .enterprisecredit-content {
+  width: 100%;
+  height: 423px;
+  position: relative;
+}
+.enterprisecredit .enterprisecredit-content a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/10.png) center center no-repeat;
+}
+.enterprisecredit .enterprisecredit-content a .text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #000;
+  text-align: left;
+}
+.enterprisecredit .enterprisecredit-content a .text p {
+  margin: 10px auto;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.enterprisecredit .enterprisecredit-content a .text span {
+  white-space: pre-wrap;
+  font-size: 28px;
+  font-family: "微软雅黑";
+}

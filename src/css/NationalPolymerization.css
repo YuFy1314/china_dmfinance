@@ -1,0 +1,238 @@
+div nav {
+  width: 100%;
+  height: 60px;
+  background: #283c5e;
+  margin-bottom: 43px;
+}
+div nav ul {
+  width: 100%;
+  height: 100%;
+}
+div nav ul li {
+  padding: 0 34px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+}
+div nav ul li a {
+  font-size: 18px;
+  color: #E4E4E4;
+}
+div nav ul li a:hover {
+  text-decoration: underline;
+}
+div nav ul .active {
+  background: linear-gradient(#3e488d, #113972);
+  background: -webkit-linear-gradient(#3e488d, #113972);
+  background: -moz-linear-gradient(#3e488d, #113972);
+  background: -ms-linear-gradient(#3e488d, #113972);
+}
+div nav ul li:hover {
+  background: linear-gradient(#3e488d, #113972);
+  background: -webkit-linear-gradient(#3e488d, #113972);
+  background: -moz-linear-gradient(#3e488d, #113972);
+  background: -ms-linear-gradient(#3e488d, #113972);
+}
+div .nationalname strong {
+  font-size: 19px;
+  color: #17294a;
+  font-family: "微软雅黑";
+}
+div .nationalname i {
+  margin: 9px auto;
+  display: block;
+  width: 34px;
+  border-top: 1px solid #fbc826;
+}
+div .nationalname b {
+  color: #45546e;
+}
+div .nationalname table {
+  margin: 20px auto;
+}
+div .nationalname table tr {
+  display: block;
+  width: 960px;
+  height: 35px;
+  background: #e5e5e5;
+}
+div .nationalname table tr th {
+  width: 192px;
+  line-height: 35px;
+  color: #434242;
+  font-size: 12px;
+  font-weight: normal;
+}
+div .nationalname .cacc {
+  margin: 0 auto;
+  width: 959px;
+  height: 249px;
+  background: url("../images/mallsB.jpg") no-repeat;
+  background-size: 100%;
+}
+div .nationalname .cacc .cacc-left {
+  width: 437px;
+}
+div .nationalname .cacc .cacc-left ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+div .nationalname .cacc .cacc-left ul li {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  line-height: 32px;
+}
+div .nationalname .cacc .cacc-left ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+div .nationalname .cacc .cacc-center {
+  width: 283px;
+}
+div .nationalname .cacc .cacc-center ul {
+  margin-top: 10px;
+}
+div .nationalname .cacc .cacc-center ul li {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  line-height: 32px;
+}
+div .nationalname .cacc .cacc-center ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+div .nationalname .cacc .cacc-right {
+  width: 220px;
+}
+div .nationalname .cacc .cacc-right ul {
+  margin-top: 10px;
+}
+div .nationalname .cacc .cacc-right ul li {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  line-height: 28px;
+}
+div .nationalname .cacc .cacc-right ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+div .nationalname .nav {
+  margin-top: 44px;
+}
+div .nationalname .nav ol {
+  width: 959px;
+  height: 43px;
+  background: #c9c9c9;
+  margin: 0 auto;
+}
+div .nationalname .nav ol li {
+  cursor: pointer;
+  float: left;
+  width: 120px;
+  height: 43px;
+  margin-right: 17px;
+  line-height: 43px;
+  font-size: 18px;
+}
+div .nationalname .nav ol .active {
+  color: #fff;
+  background: #1b0a4f;
+}
+div .nationalname .nav .details {
+  width: 959px;
+  margin: 20px auto;
+}
+div .nationalname .nav .details > div {
+  width: 959px;
+  background: #dcdcdc;
+  display: none;
+}
+div .nationalname .nav .details > div div {
+  width: 100%;
+  height: 266px;
+}
+div .nationalname .nav .details > div div strong {
+  display: block;
+  width: 85px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000;
+  background: #fbc826;
+  position: relative;
+  left: 50%;
+  margin-left: -42.5px;
+}
+div .nationalname .nav .details > div div strong a {
+  font-size: 16px;
+  color: #000;
+}
+div .nationalname .nav .details > div div strong p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #353434;
+}
+div .nationalname .nav .details > div div .details-left {
+  width: 457px;
+  margin-left: 20px;
+  text-align: left;
+}
+div .nationalname .nav .details > div div .details-left dt {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+div .nationalname .nav .details > div div .details-left dd {
+  height: 36px;
+  line-height: 36px;
+}
+div .nationalname .nav .details > div div .details-left dd a {
+  color: #000;
+  font-size: 16px;
+}
+div .nationalname .nav .details > div div .details-right {
+  width: 458px;
+  margin-left: 20px;
+  text-align: left;
+}
+div .nationalname .nav .details > div div .details-right dt {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+div .nationalname .nav .details > div div .details-right dd {
+  height: 36px;
+  line-height: 36px;
+}
+div .nationalname .nav .details > div div .details-right dd a {
+  color: #000;
+  font-size: 16px;
+}
+div .nationalname .nav .details > div div .act {
+  color: #000;
+  margin-top: 10px;
+}
+div .nationalname .nav .details > div div .act:hover {
+  color: #005bac;
+  text-decoration: underline;
+}
+div .nationalname .nav .details .company strong,
+div .nationalname .nav .details .thebelt strong {
+  left: 0;
+  margin-left: 15px;
+  padding-top: 20px;
+  background: #dcdcdc;
+}
+div .nationalname .nav .details .company strong a,
+div .nationalname .nav .details .thebelt strong a {
+  font-size: 18px;
+}
+div .nationalname .nav .details .thebelt strong {
+  margin-bottom: 30px;
+}
+div .nationalname .nav .details div.active {
+  display: block;
+}

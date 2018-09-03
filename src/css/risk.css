@@ -1,0 +1,284 @@
+.searchBar1 {
+  user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar1 .newBar {
+  width: 650px;
+  height: 50px;
+  float: left;
+}
+.searchBar1 .newBar ul li {
+  width: 120px;
+  height: 100%;
+  margin-right: 10px;
+  line-height: 50px;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar1 .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar1 .newBar ul li ol {
+  position: absolute;
+  width: 120px;
+  display: none;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.searchBar1 .newBar ul li ol li {
+  position: relative;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li a {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+}
+.searchBar1 .newBar ul li ol li .aann {
+  display: none;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  left: 120px;
+  top: 0;
+  border-left: 1px solid #DCDCDC;
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.2);
+}
+.searchBar1 .newBar ul li ol li .aann div {
+  width: 120px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px dashed #CCCCCC;
+}
+.searchBar1 .newBar ul li ol li .aann div a {
+  color: #fff;
+}
+.searchBar1 .newBar ul li ol li:hover .aann {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active2:hover ol {
+  display: block;
+}
+.searchBar1 .newBar ul .active2:hover ol li a {
+  color: #797979;
+}
+.searchBar1 .newBar ul .active2:hover ol li a:hover {
+  color: #005bac;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.searchBar1 .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar1 .newBar ul .active {
+  background: #005bac;
+}
+.searchBar1 .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.searchBar {
+  user-select: none;
+  margin-bottom: 15px;
+}
+.searchBar .newBar {
+  width: 824px;
+  float: left;
+}
+.searchBar .newBar ul {
+  background: #eeeeee;
+}
+.searchBar .newBar ul li {
+  padding: 13px  32px;
+  border: 2px solid #eee;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  float: left;
+  position: relative;
+}
+.searchBar .newBar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #797979;
+}
+.searchBar .newBar ul .active2:hover {
+  background: #fff;
+  border-bottom: 2px  solid #fff;
+}
+.searchBar .newBar ul .active2:hover a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .newBar ul .active {
+  border-bottom: 2px  solid #fff;
+  background: #fff;
+}
+.searchBar .newBar ul .active a {
+  width: 100%;
+  height: 100%;
+  color: #005bac;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.searchBar .search {
+  float: right;
+  height: 46px;
+  border: 2px solid #a0a0a0;
+}
+.searchBar .search i {
+  float: left;
+  display: block;
+  width: 35px;
+  height: 46px;
+  background: url(../images/searchhui.png) center no-repeat;
+}
+.searchBar .search input {
+  outline: none;
+  border: 0;
+  width: 262px;
+  height: 44px;
+  float: left;
+}
+.searchBar .search ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #ccc;
+}
+.searchBar .search em {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  background: #a0a0a0;
+  color: #fff;
+  font-style: normal;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  cursor: pointer;
+}
+.assetsBar {
+  margin-bottom: 30px;
+  height: 55px;
+  border-bottom: 1px solid #eeeeee;
+}
+.assetsBar .pois {
+  margin-top: 10px;
+}
+.assetsBar .pois i {
+  font-style: normal;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #999;
+}
+.assetsBar .pois i b {
+  color: #005bac;
+}
+.risk {
+  height: 110px;
+  width: 960px;
+  margin-bottom: 460px;
+}
+.risk span {
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: #17294a;
+  font-weight: bold;
+}
+.risk .exSur {
+  margin-top: 22px;
+}
+.risk .exSur table {
+  width: 962px;
+  height: 161px;
+}
+.risk .exSur table tr th {
+  border: .5px solid #a7c6e2;
+  background: #92b9db;
+  width: 240px;
+  height: 54px;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #000;
+}
+.risk .exSur table tr td {
+  font-size: 14px;
+  background: #a2c3e0;
+  border: 1px solid #a7c6e2;
+  font-family: "微软雅黑";
+  width: 240px;
+  height: 54px;
+  color: #fff;
+}
+.risk .exSur table tr:nth-child(odd) td {
+  background: #92b9db;
+}
+.bx {
+  height: 110px;
+  width: 960px;
+  margin-bottom: 50px;
+}
+.bx span {
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: #17294a;
+  font-weight: bold;
+}
+.bx .exSur {
+  margin-top: 22px;
+}
+.bx .exSur table {
+  width: 962px;
+  height: 90px;
+}
+.bx .exSur table tr {
+  width: 238px;
+  height: 30px;
+}
+.bx .exSur table tr th {
+  border: .5px solid #a7c6e2;
+  background: #92b9db;
+  width: 238px;
+  height: 30px;
+}
+.bx .exSur table tr th a {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #fff;
+  font-weight: normal;
+}

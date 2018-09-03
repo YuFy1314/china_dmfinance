@@ -1,0 +1,169 @@
+<!--
+	作者：苏日俪格
+	时间：2018-03-22
+	描述：信息咨询--活动界面
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>信息咨询--活动</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/activity.css" />
+	</head>
+
+	<body>
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-22
+        	描述：公共头部head
+       -->
+		<embed type="text/html" src="head.html" width="100%" height="104" />
+
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-22
+        	描述：新闻导航
+       -->
+		<div class="container searchBar clearfix">
+			<div class="newBar">
+				<ul class="clearfix">
+					<li class="active2">
+						<a href="infoPlatform.html">新闻动态</a>
+					</li>
+					<li class="active2">
+						<a href="activity.html">政策法规</a>
+					</li>
+					<li class="active2" >
+		       	 		<a href="AssetsExchange.html">经济金融数据</a>
+		       	 		<ol>
+		       	 			<li><a href="AssetsExchange.html" >资产类别</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="AssetsExchange.html">外汇</a></div>
+		       	 					<div><a href="AssetsShares.html">股票</a></div>
+		       	 					<div><a href="AssetsBond.html">大宗商品</a></div>
+		       	 					<div><a href="AssetsBond.html">债券</a></div>
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="CountryData.html">宏观数据</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="CountryData.html">GDP</a></div>
+		       	 					<div><a href="CountryData.html">CPI</a></div>
+		       	 					<div><a href="CountryData.html">就业季度指数</a></div>
+		       	 					<div><a href="CountryData.html">贸易与投资</a></div>
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="Trade.html">投资与贸易</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="Trade.html">贸易</a></div>
+		       	 					<div><a href="Trade.html">投资</a></div>
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="consultation.html">指数</a>
+		       	 				<!--<div class="aann">
+		       	 					<div><a href="consultation.html">人民币国际指数</a></div>
+		       	 					<div><a href="consultation.html">一带一路指数</a></div>
+		       	 					
+		       	 		
+		       	 				</div>-->
+		       	 			</li>
+		       	 			<li><a href="risk.html">风险</a></li>
+		       	 			<li><a href="Research.html">研究报告</a></li>
+		       	 		</ol>
+		       	 		
+		       	 	</li>
+					<li class="active2">
+						<a href="Project.html">项目</a>
+					</li>
+					<li class="active active2">
+						<a href="activity.html">活动</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="posi container clearfix">
+       		<i>您所在的位置：中国-东盟综合金融服务网 > 信息咨询平台>活动</i>
+   		</div>
+   		
+   		<div class="container">
+   			<div class="activity-list"></div>
+   		</div>
+   		
+   		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：回到顶部
+        -->
+		<div class="returntop"></div>
+		
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--
+        	作者：苏日俪格
+        	时间：2018-03-22
+        	描述：公共common.js
+        -->
+   		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+   		
+   		<!--
+           	作者：苏日俪格
+           	时间：2018-03-22
+           	描述：交互数据
+        -->
+        <script type="text/javascript">
+       		$.ajax({
+       			url: "http://101.201.154.205:9092/ZD_2/HList",
+       			data: {
+					t: Math.random()
+				},
+       			dataType: 'json',
+       			jsonp: 'callback'
+       		}).then(function(res){
+       			for(var i=0; i<res.length; i++){
+       				var oActivity = $(`<div class="activity">
+	   					<h1>${res[i].ztitle}</h1>
+	   					<p><span>会议简介:</span>${res[i].instro}</p>
+	   					<p><span>会议成果:</span>${res[i].result}</p>
+	   					<h2>新闻:</h2>
+	   					<table border="0" cellspacing="0" cellpadding="0">
+		            		<tr>
+		            			<td>日期</td>
+		            			<td>标题</td>
+		            			<td>来源</td>
+		            		</tr>
+		            		<tr>
+		            			<td>${res[i].date}</td>
+		            			<td><a href="${res[i].apendix}" target="_blank">${res[i].title}</a></td>
+		            			<td>${res[i].scrouse}</td>
+		            		</tr>
+		            		<tr>
+		            			<td>${res[i].date}</td>
+		            			<td><a href="${res[i+1].apendix}" target="_blank">${res[i+1].title}</a></td>
+		            			<td>${res[i].scrouse}</td>
+		            		</tr>
+		            		<tr>
+		            			<td>${res[i].date}</td>
+		            			<td><a href="${res[i+2].apendix}" target="_blank">${res[i+2].title}</a></td>
+		            			<td>${res[i].scrouse}</td>
+		            		</tr>
+		            	</table>
+	   				</div>`);
+	   				oActivity.appendTo($('.activity-list'));
+       			}
+       		},function(){
+       			console.log('error');
+       		});
+        </script>
+        
+   		<!--
+        	作者：苏日俪格
+        	时间：2018-03-19
+        	描述：公共底部foot
+        -->
+		<embed type="text/html" src="foot.html" width="100%" height="150" style="margin-top: 115px;"></embed>
+	</body>
+
+</html>
